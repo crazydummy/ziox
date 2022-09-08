@@ -1,0 +1,44 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <Description>More filesystems implemetation with zio https://github.com/xoofx/zio</Description>
+    <Copyright>crazydummy</Copyright>
+    <AssemblyTitle>Ziox</AssemblyTitle>
+    <NeutralLanguage>en-US</NeutralLanguage>
+    <Authors>crazydummy</Authors>
+    <TargetFrameworks>netstandard2.1</TargetFrameworks>
+    <AssemblyName>Ziox</AssemblyName>
+    <PackageId>Ziox</PackageId>
+    <PackageTags>filesystem;vfs;VirtualFileSystem;virtual;abstract;directory;files;io;mock</PackageTags>
+    <PackageReadmeFile>readme.md</PackageReadmeFile>
+    <PackageProjectUrl>https://github.com/crazydummy/ziox</PackageProjectUrl>
+    <PackageLicenseExpression>BSD-2-Clause</PackageLicenseExpression>
+    <LangVersion>9</LangVersion>
+    <!--Add support for sourcelink-->
+    <PublishRepositoryUrl>true</PublishRepositoryUrl>
+    <IncludeSymbols>true</IncludeSymbols>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="../../img/zio.png" Pack="true" PackagePath="" />
+    <None Include="../../readme.md" Pack="true" PackagePath="/"/>
+    <PackageReference Include="Microsoft.SourceLink.GitHub" Version="1.1.1" PrivateAssets="All" />
+    <PackageReference Include="MinVer" Version="3.1.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Zio" Version="0.15.0" />
+  </ItemGroup>
+  
+  <Target Name="PatchVersion" AfterTargets="MinVer">
+    <PropertyGroup>
+      <!--The minor version is like a major version because Major is 0, need to remove this when will be >= 1.0-->
+      <AssemblyVersion>$(MinVerMajor).$(MinVerMinor).0.0</AssemblyVersion>
+    </PropertyGroup>
+  </Target>
+</Project>

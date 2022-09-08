@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32414.318
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ziox", "Ziox\Ziox.csproj", "{9DE6A497-B284-4D33-A6CE-45CB74CDCAAA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZioxTests", "ZioxTests\ZioxTests.csproj", "{2E08D30E-4B50-4040-9D92-D1FF0BEB18A0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9DE6A497-B284-4D33-A6CE-45CB74CDCAAA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9DE6A497-B284-4D33-A6CE-45CB74CDCAAA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9DE6A497-B284-4D33-A6CE-45CB74CDCAAA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9DE6A497-B284-4D33-A6CE-45CB74CDCAAA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2E08D30E-4B50-4040-9D92-D1FF0BEB18A0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2E08D30E-4B50-4040-9D92-D1FF0BEB18A0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2E08D30E-4B50-4040-9D92-D1FF0BEB18A0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2E08D30E-4B50-4040-9D92-D1FF0BEB18A0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {80D21F8C-6957-4450-AF6D-70F1952B2F61}
+	EndGlobalSection
+EndGlobal
