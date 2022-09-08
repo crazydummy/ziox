@@ -1,2 +1,2 @@
 # ziox
-Implement more filesystem with zio
+More filesystem with [zio](https://github.com/xoofx/zio)
